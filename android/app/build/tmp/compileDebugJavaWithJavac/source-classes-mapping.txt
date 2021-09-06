@@ -1,0 +1,14 @@
+com/clone/BuildConfig.java
+ com.clone.BuildConfig
+com/clone/ReactNativeFlipper.java
+ com.clone.ReactNativeFlipper
+ com.clone.ReactNativeFlipper$1
+ com.clone.ReactNativeFlipper$2
+ com.clone.ReactNativeFlipper$2$1
+com/clone/MainActivity.java
+ com.clone.MainActivity
+com/clone/MainApplication.java
+ com.clone.MainApplication
+ com.clone.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
