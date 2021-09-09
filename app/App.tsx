@@ -3,12 +3,19 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import LoginPage from './components/LoginPage';
 import RegisterPage from './components/RegisterPage';
-import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  HttpLink,
+} from '@apollo/client';
 
 const Stack = createNativeStackNavigator();
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/',
+  link: new HttpLink({
+    uri: 'http://192.168.1.105:4000',
+  }),
   cache: new InMemoryCache(),
 });
 

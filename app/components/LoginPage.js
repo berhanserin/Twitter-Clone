@@ -42,6 +42,7 @@ export default class LoginPage extends Component {
                   placeholder="E-posta"
                   onChangeText={handleChange('email')}
                   onBlur={handleBlur('email')}
+                  placeholderTextColor="grey"
                   value={values.email}
                   style={styles.textInput}
                   keyboardType="email-address"
@@ -51,6 +52,7 @@ export default class LoginPage extends Component {
                 )}
                 <TextInput
                   style={styles.textInput}
+                  placeholderTextColor="grey"
                   placeholder="Şifre"
                   onChangeText={handleChange('password')}
                   onBlur={handleBlur('password')}
@@ -94,6 +96,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   textInput: {
+    color: 'black',
     borderRadius: 10,
     borderColor: '#000',
     marginTop: 15,
